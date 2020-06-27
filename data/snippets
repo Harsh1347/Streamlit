@@ -1,0 +1,89 @@
+a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
+     \sum_{k=0}^{n-1} ar^k =
+     a \left(\frac{1-r^{n}}{1-r}\right)
+
+d ={
+    "name":"Harsh",
+    "language":"Python",
+    "topic":"Streamlit"
+} 
+
+x = [x for x in range(11)]
+y = [12,2,3,6,13,10,22,7,9,1,8] 
+plt.style.use("fivethirtyeight")
+fig,ax = plt.subplots()
+ax = plt.plot(x,y) 
+
+data = pd.DataFrame({
+    'awesome cities' : ['Chicago', 'Minneapolis', 'Louisville', 'Topeka'],
+    'lat' : [41.868171, 44.979840,  38.257972, 39.030575],
+    'lon' : [-87.667458, -93.272474, -85.765187,  -95.702548]
+})
+
+
+st.graphviz_chart('''
+    digraph {
+        watch -> like
+        like -> subscribe
+        subscribe -> share
+        subscribe -> watch
+        }
+''')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+st.header("Header")
+
+st.subheader("Sub-Header")
+
+st.text("This is text for streamlit")
+
+st.markdown("""# Header 1 
+Hello *italics*<br>
+** BOLD ** <br>
+***BOLD AND ITALICS*** <br>
+:+1:
+:sunglasses:
+:moon:
+""",unsafe_allow_html = True)
+
+st.latex(r'''  a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} ''')
+
+st.write(""" ** hello **  
+ a + ar^2""")
+
+d ={
+    "name":"Harsh",
+    "language":"Python",
+    "topic":"Streamlit"
+} 
+
+x = [x for x in range(11)]
+y = [12,2,3,6,13,10,22,7,9,1,8]  
+
+
+
+st.write("Hello")
+st.code("""for i in range(10):
+    print(i)""",language = 'python')
