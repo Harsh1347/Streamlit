@@ -28,7 +28,7 @@ st.write(v3)
 
 st.slider("age",min_value = 18,max_value=60,value = 30,step = 2)
 
-st.number_input("numbers",min_value = 18.0,max_value=60.0,value = 30.0,step = 2.0)
+st.number_input("numbers",min_value = 18,max_value=60,value = 30,step = 2)
 
 img = st.file_uploader("Upload a file")
 st.image(img)
