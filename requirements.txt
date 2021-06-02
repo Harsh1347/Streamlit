@@ -74,7 +74,7 @@ toolz==0.10.0
 tornado==5.1.1
 traitlets==4.3.3
 tzlocal==2.1
-urllib3==1.25.9
+urllib3==1.26.5
 validators==0.15.0
 watchdog==0.10.2
 wcwidth==0.2.4
