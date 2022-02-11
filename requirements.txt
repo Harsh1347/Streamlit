@@ -49,7 +49,7 @@ Pillow==7.1.2
 plotly==4.9.0
 prometheus-client==0.8.0
 prompt-toolkit==3.0.5
-protobuf==3.12.2
+protobuf==3.15.0
 pydeck==0.4.0b2
 Pygments==2.6.1
 pyparsing==2.4.7
