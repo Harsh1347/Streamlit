@@ -13,8 +13,8 @@ st.markdown(""" # h1 tag
 ### h3 tag
 :moon:<br>
 :sunglasses:
-** bold **
-_ italics _
+**bold**
+_italics_
 """,True)
 
 st.latex(r''' a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =

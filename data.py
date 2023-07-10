@@ -19,7 +19,7 @@ st.table(dic)
 st.json(dic)
 st.write(dic)
 
-@st.cache
+@st.cache_data
 def ret_time(a):
     time.sleep(5)
     return time.time()

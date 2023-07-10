@@ -34,9 +34,10 @@ share -> watch
 
 st.altair_chart(chart,use_container_width =True)
 
-plt.scatter(data['a'],data['b'])
+fig, ax = plt.subplots()
+ax.scatter(data['a'],data['b'])
 plt.title("scatter")
-st.pyplot()
+st.pyplot(fig)
 
 st.line_chart(data)
 

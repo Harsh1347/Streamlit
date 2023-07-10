@@ -18,9 +18,11 @@ if rad == "Home":
 
     col = st.sidebar.multiselect("Select a Column",df.columns)
 
-    plt.plot(df['num'],df[col])
+    fig, ax = plt.subplots()
+    ax.plot(df['num'],df[col])
 
-    st.pyplot()
+    st.pyplot(fig)
+
 
 if rad == "About Us":
 
