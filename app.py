@@ -25,13 +25,13 @@ if nav == "Home":
     val = st.slider("Filter data using years",0,20)
     data = data.loc[data["YearsExperience"]>= val]
     if graph == "Non-Interactive":
-        plt.figure(figsize = (10,5))
-        plt.scatter(data["YearsExperience"],data["Salary"])
-        plt.ylim(0)
-        plt.xlabel("Years of Experience")
-        plt.ylabel("Salary")
+        fig, ax = plt.subplots(figsize=(10, 5))
+        ax.scatter(data["YearsExperience"], data["Salary"])
+        ax.set_ylim(0)
+        ax.set_xlabel("Years of Experience")
+        ax.set_ylabel("Salary")
         plt.tight_layout()
-        st.pyplot()
+        st.pyplot(fig)
     if graph == "Interactive":
         layout =go.Layout(
             xaxis = dict(range=[0,16]),
